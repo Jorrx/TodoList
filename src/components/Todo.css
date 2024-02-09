@@ -1,0 +1,28 @@
+.menu {
+    width: 25px;
+    height: 25px;
+    background: url('./icons8-menu-vertical-50.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.menu>button {
+    display: none;
+}
+
+.menu.active>button {
+    display: block;
+}
+
+.todo__list__Item {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid rgba(118, 118, 118, 0.25);
+    border-radius: 7px;
+}
+
+.Todo_info_text{
+    color: #1D7EAF;
+    text-align: center;
+}
