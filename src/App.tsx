@@ -28,6 +28,7 @@ const App = () => {
     }
 
     setTodos([...todos, { ...todoForAdd }])
+    setValue('')
   }
 
   const memoizedTodos = useMemo(() => {
