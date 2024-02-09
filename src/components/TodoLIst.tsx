@@ -43,7 +43,7 @@ const TodoList: FC<ITodoList> = memo(({ todos, setTodos }) => {
                 :
                 <div>
                     <>
-                        {complitedTodos.map(todo => {
+                        {notCompletedTodos.map(todo => {
                             return <TodoListItem
                                 key={todo.id}
                                 todos={todos}
@@ -58,7 +58,7 @@ const TodoList: FC<ITodoList> = memo(({ todos, setTodos }) => {
                     <Collapse in={open} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                             <>
-                                {notCompletedTodos.length ? notCompletedTodos.map(todo => {
+                                {complitedTodos.length ? complitedTodos.map(todo => {
                                     return <TodoListItem
                                         key={todo.id}
                                         todos={todos}
